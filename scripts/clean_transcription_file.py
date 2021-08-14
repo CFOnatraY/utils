@@ -49,7 +49,7 @@ def save_cleaned_file_to_directory(file_name, cleaned_content_lines):
 
 def create_cleaned_files_path():
     path = os.path.join('..', cleaned_files_directory)
-    print("I'm going to atempt to create a new folder outside this current directory and it will be named: {}".format(
+    print("I'm going to attempt to create a new folder outside this current directory and it will be named: {}".format(
         cleaned_files_directory))
     try:
         os.mkdir(path)
@@ -65,7 +65,7 @@ def remove_empty_spaces(string):
 # Here is where the magic happens:
 create_cleaned_files_path()
 
-for path, dirs, files in os.walk(current_path):
+for _path, dirs, files in os.walk(current_path):
     for filename in files:
         if filename.endswith(".vtt"):
             print("Currently working on file: {}".format(filename))
