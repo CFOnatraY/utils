@@ -25,21 +25,7 @@ Thumbs.db
 *.csv
 *.xlsx
 *.pkl  # Python pickle files
-
-# Specific known files
-clean-file.xlsx
-updated_clean_file.xlsx
-reference_report.xlsx
-reference_report_v1.xlsx
-input_file.xlsx
-
-# Specific to MigrationDataCleaningTool
-MigrationDataCleaningTool/__pycache__/
-MigrationDataCleaningTool/*.pyc
-
-# Specific to Other_Scripts
-Other_Scripts/geocode_cache.pkl
-Other_Scripts/geocoded_output.xlsx
+*.txt
 
 # Packaging files
 *.egg
